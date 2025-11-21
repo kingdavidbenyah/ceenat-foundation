@@ -14,7 +14,7 @@ export default function contactCard({
   link,
 }: ContactCardProps) {
   return (
-    <div className="flex flex-col items-center md:items-start w-full md:min-w-[220px] shadow shadow-sm border border-gray-4 rounded-[16px] gap-2 w-fit p-4 ">
+    <div className="flex flex-col items-center md:items-start w-full  shadow shadow-sm border border-gray-4 rounded-[16px] gap-2 w-fit p-4 ">
       {/* icon */}
       <div className="bg-primary-default rounded-full mb-4 w-fit h-fit p-[16px] ">
         {icon}

@@ -1,5 +1,6 @@
 import ContactCard from "../../components/contactCard";
 import PageHeader from "../../components/pageHeader";
+import ContactForm from "../../components/contactForm";
 
 const contactCards = [
   {
@@ -25,24 +26,26 @@ const contactCards = [
 export default function page() {
   return (
     <div className="mt-[90px] min-h-screen bg-[#f7f7f7] max w-screen overflow-x-hidden ">
-    <div className=" container-wide section-padding  flex flex-col ">
-      <PageHeader title="Contact Us" />
-      <div className=" flex flex-col md:grid md:grid-cols-2 lg:flex-row lg:flex  gap-4 section-padding">
-      {contactCards.map((card, index) => (
-        <ContactCard
-          key={index}
-          title={card.title}
-          btnText={card.btnText}
-          icon={card.icon}
-          link={card.link}
-        />
-      ))}
-
+      <div className=" container-wide section-padding  flex flex-col ">
+        <PageHeader title="Contact Us" />
+        <div className="">
+          <PageHeader quote="Ceenat Foundation  — Feeding dreams, touching hearts, building a better Ghana. " />
+        </div>
+        <div className="flex flex-col gap-4 section-padding  md:flex md:flex-row">
+          <div className="flex flex-col gap-4">
+            {contactCards.map((card, index) => (
+              <ContactCard
+                key={index}
+                title={card.title}
+                btnText={card.btnText}
+                icon={card.icon}
+                link={card.link}
+              />
+            ))}
+          </div>
+          <ContactForm />
+        </div>
       </div>
-      <div>
-      <PageHeader quote="Ceenat Foundation  — Feeding dreams, touching hearts, building a better Ghana. " />
-      </div>
-    </div>
     </div>
   );
 }

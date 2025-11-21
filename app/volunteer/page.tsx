@@ -77,7 +77,7 @@ export default function page() {
     <div className="mt-[90px] flex-1 bg-[#f7f7f7] min-h-screen  flex flex-col ">
       <div className="section-padding container-wide  flex flex-col">
         <PageHeader title="Get Involved" quote="Be Part of the Change." />
-        <div className=" section-padding gap-6 flex-col flex">
+        <div className=" section-padding gap-14 flex-col flex">
           {/* content */}
           {volunteerData.map((item) => (
             <VolunteerCard
