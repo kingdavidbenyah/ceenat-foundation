@@ -40,7 +40,7 @@ export default function page() {
         <PageHeader title="Our Programs" />
         {/* text with image */}
         <section className=" container-wide w-full section-padding">
-          <div className=" flex flex-col gap-8 md:flex-row">
+          <div className=" flex flex-col items-center gap-8 md:flex-row">
             <div className="flex flex-col gap-5 md:gap-10 md:flex-1">
               {programsInfo.map((program, index) => (
                 <ProgramText
@@ -52,7 +52,7 @@ export default function page() {
             </div>
             <div className="w-full md:flex-1  rounded-3xl overflow-hidden">
               <Image
-                src="/img/footerPics/4.png"
+                src="/img/programs/ourPrograms.jpeg"
                 width={1920}
                 height={1080}
                 alt="about image"
