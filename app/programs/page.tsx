@@ -38,41 +38,79 @@ export default function page() {
     <div className="mt-[90px] flex flex-col">
       <div className="section-padding min-h-screen">
         <PageHeader title="Our Programs" />
-        {/* text with image */}
-        <section className=" container-wide w-full section-padding">
-          <div className=" flex flex-col gap-8 md:flex-row">
-            <div className="flex flex-col gap-5 md:gap-10 md:flex-1">
-              {programsInfo.map((program, index) => (
-                <ProgramText
+        {/* Our Focus and Image */}
+        <section className="container-wide py-5 lg:py-8 flex flex-col herorow:flex-row justify-between items-center gap-[60px] xl:gap-0">
+          <div className="space-y-6 w-full herorow:w-1/2">
+            <div className="flex flex-col gap-5 md:gap-10 md:flex-1 w-full">
+              {programsInfo.map((card, index) => (
+                <div
                   key={index}
-                  title={program.title}
-                  description={program.description}
-                />
+                  className={`w-full herorow:max-w-[550px] flex flex-col gap-1.5`}
+                >
+                    <p className="text-base md:text-[18px] font-semibold text-gray-11">
+                      {card.title}
+                    </p>
+                    <p className="section-subtext text-left p-0 m-0">
+                      {card.description}
+                    </p>
+                </div>
               ))}
             </div>
-            <div className="w-full md:flex-1  rounded-3xl overflow-hidden">
-              <Image
-                src="/img/programs/ourPrograms.png"
-                width={1920}
-                height={1080}
-                alt="about image"
-                className=" object-cover  w-full h-[320px] lg:max-w-[640px] md:h-full"
-              />
-            </div>
+          </div>
+          <div className="relative w-full max-w-[580px] max-h-[580px] herorow:w-1/2 xl:max-w-[600px] xl:max-h-[600px] aspect-[4/5] rounded-[24px] overflow-hidden">
+            <Image
+              src="/img/programs/ourPrograms.jpeg"
+              alt="hands on child face"
+              fill
+              className="object-cover object-center"
+            />
           </div>
         </section>
-        <section className=" flex-col flex gap-2 px-2 w-full pt-10 md:pt-12 lg:pt-16 pb-2 md:pb-4 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 flex-1">
-            {imageUrls.map((image, index) => (
-              <Image
-                key={index}
-                src={image.src}
-                width={1920}
-                height={1080}
-                alt={image.alt}
-                className=" object-cover flex-1  h-[240px] md:h-[365px]  "
-              />
-            ))}
+        {/* Moments from Our Programs - collage card */}
+        <section className="container-wide w-full section-padding">
+          <div className="container-wide rounded-3xl shadow-md p-4 md:p-6 lg:p-8 bg-white/30 border border-gray-3">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-4 mb-4 md:mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900">
+                Moments from Our Programs
+              </h2>
+              <p className="text-xs md:text-sm text-gray-700 max-w-xl">
+                A glimpse into the outreaches, school support, and community
+                programs made possible by the generosity of our partners and
+                volunteers.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-5 auto-rows-[120px] md:auto-rows-[140px] lg:auto-rows-[170px]">
+              {imageUrls.map((image, index) => {
+                let layoutClasses =
+                  "col-span-1 row-span-1 h-[120px] md:h-auto lg:h-auto";
+
+                if (index === 0) {
+                  // Big hero top-left
+                  layoutClasses =
+                    "col-span-2 row-span-2 md:col-span-2 md:row-span-2";
+                } else if (index === 1) {
+                  // Big hero top-right on md+
+                  layoutClasses =
+                    "col-span-2 row-span-2 md:col-span-2 md:row-span-2";
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className={`${layoutClasses} rounded-2xl overflow-hidden bg-black/10`}
+                  >
+                    <Image
+                      src={image.src}
+                      width={1920}
+                      height={1080}
+                      alt={image.alt}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
       </div>

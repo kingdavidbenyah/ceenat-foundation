@@ -115,8 +115,8 @@ export default function About() {
         />
         {/* text with image */}
         <div className=" container-wide  ">
-          <div className="lg:h-[640px] flex flex-col gap-8 lg:flex-row">
-            <p className="text-[0A0A0A] gap-2 lg:gap-4  lg:place-content-center lg:flex-1 text-[12px] md:text-[16px] lg:text-[18px] flex flex-col ">
+          <div className=" flex flex-col lg:flex-row gap-8 items-center lg:justify-between lg:gap-0 ">
+            <p className="text-sm md:text-base lg:text-lg lg:max-w-[40%] text-gray-10 gap-2 lg:gap-4 lg:flex-1  flex flex-col">
               <span>
                 Ceenat Foundation is a Ghana-based non-profit organization
                 dedicated to fighting poverty and improving child welfare.
@@ -137,13 +137,12 @@ export default function About() {
                 a reality for everyone.
               </span>
             </p>
-            <div className="w-full md:flex-1  rounded-3xl overflow-hidden">
+            <div className="relative w-full max-w-[580px] max-h-[580px] lg:w-1/2 xl:max-w-[600px] xl:max-h-[600px] aspect-[4/5] rounded-[24px] overflow-hidden">
               <Image
                 src="/img/about/aboutImage.png"
-                width={1920}
-                height={1080}
                 alt="about image"
-                className=" object-cover  w-full h-60 lg:max-w-[640px] lg:h-full"
+                fill
+                className=" object-cover object-center"
               />
             </div>
           </div>
@@ -173,7 +172,7 @@ export default function About() {
             <h3 className="text-gray-10 section-title lg:text-left font-bold">
               Our Mission
             </h3>
-            <p className="text-[12px] md:text-[14px] text-[#4f4f4f]  ">
+            <p className="section-subtext">
               To alleviate poverty and promote child welfare by providing food,
               education, healthcare, and empowerment to vulnerable families
               across Ghana.
@@ -186,7 +185,7 @@ export default function About() {
             <h3 className="text-gray-10 section-title lg:text-left font-bold">
               Our Vision
             </h3>
-            <p className="text-[12px] md:text-[14px] text-[#4f4f4f] ">
+            <p className="section-subtext">
               A Ghana where every child is fed, nurtured, and empowered to reach
               their full potential.
             </p>

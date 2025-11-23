@@ -61,7 +61,7 @@ export default function navbar() {
   return (
     <main className="bg-gray-1 w-full fixed top-0 border-b z-9999 border-gray-4">
       <nav className="container-wide nav-padding flex-between relative z-50">
-        <Link href="/" className="cursor-pointer">
+        <Link href="/" className="focus:outline-none cursor-pointer">
           <div className="flex-center gap-0.5 xl:gap-1 max-w-[155px] sm:max-w-[500px]">
             <Image
               className="w-10 h-10 xl:w-[45px] xl:h-[45px]"
@@ -107,12 +107,12 @@ export default function navbar() {
             className="hidden sm:flex"
             onClick={() => setIsDonateModalOpen(true)}
           />
-          <button ref={buttonRef} onClick={() => setIsOpened(!isOpened)}>
+          <button ref={buttonRef} onClick={() => setIsOpened(!isOpened)} className="cursor-pointer">
             {isOpened ? (
               <X className="w-6 h-6 text-primary-default" />
             ) : (
               <Image
-                className="w-[21px] h-4 hover:cursor-pointer"
+                className="w-[21px] h-4"
                 src="/svg/hamburger.svg"
                 width={80}
                 height={80}

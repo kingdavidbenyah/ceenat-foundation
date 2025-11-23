@@ -145,7 +145,7 @@ export default function Home() {
               <li className="text-xl sm:text-[22px] md:text-[28px]  lg:text-[36px] text-gray-11 font-bold">
                 Lifting Lives with Love and Action
               </li>
-              <li className="text-sm md:text-base lg:text-[18px] text-gray-8 font-medium max-w-[550px] md:max-w-[550px]">
+              <li className="text-sm md:text-base lg:text-lg text-gray-8 font-medium max-w-[550px] md:max-w-[550px]">
                 Empowering communities through compassion and hands-on support
                 to create lasting change and uplift lives with love and action.
               </li>
@@ -179,8 +179,8 @@ export default function Home() {
             </li>
           </ul>
           {/* Our Focus and Image */}
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-[60px] lg:gap-[45px[">
-            <div className="relative w-full max-w-[550px] max-h-[580px] aspect-[4/5] lg:w-1/2 rounded-[24px] overflow-hidden lg:order-1">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-[60px] lg:gap-0">
+            <div className="relative w-full max-w-[580px] max-h-[580px] lg:w-1/2 xl:max-w-[600px] xl:max-h-[600px] aspect-[4/5] rounded-[24px] overflow-hidden lg:order-1">
               <div className="absolute inset-0 bg-gray-10/50 z-10"></div>
               <Image
                 src="/img/home/whatwedo.png"
@@ -195,7 +195,7 @@ export default function Home() {
                 {focusCards.map((card, index) => (
                   <div
                     key={index}
-                    className="w-full lg:max-w-[470px] flex items-center gap-4 lg:px-5 lg:py-4 px-5 530px:px-6 md:px-8 py-4 530px:py-5 md:py-8 lg:border-none lg:shadow-none border border-gray-2 shadow-sm rounded-[12px]"
+                    className="w-full lg:max-w-[470px] flex items-center gap-4 lg:px-0 lg:py-4 px-5 530px:px-6 md:px-8 py-4 530px:py-5 md:py-8 lg:border-none lg:shadow-none border border-gray-2 shadow-sm rounded-[12px]"
                   >
                     <Image
                       src={card.icon}
@@ -284,9 +284,9 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
                 <Button text="Donate Now" className="w-full sm:w-auto" onClick={() => setIsDonateModalOpen(true)} />
-                <Link href="/programs">
-                  <button className="cursor-pointer group flex flex-col gap-2 font-medium text-primary-default">
-                    <span className="flex-center gap-2">
+                <Link href="/programs" className="w-full sm:w-auto">
+                  <button className="w-full sm:w-auto cursor-pointer group flex flex-col gap-2 font-medium text-primary-default">
+                    <span className="flex-center gap-2 w-full">
                       Our Programs <BsArrowUpRightCircle className="w-5 h-5" />
                     </span>
                     {/* Underline Animation */}

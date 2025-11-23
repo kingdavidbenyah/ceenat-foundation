@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "year": "2023",
+    "location": "OFAAKOR",
+    "title": "ROYAL SEED ORPHANAGE: NO CHILD LEFT BEHIND",
+    "description": "At the heart of Ofaakor, the Royal Seed Orphanage stands as a beacon of compassion and renewal.",
+    "image": "/img/volunteer/story-1.jpeg",
+    "sections": [
+      "At the heart of Ofaakor, the Royal Seed Orphanage stands as a beacon of compassion and renewal. What began as a modest effort to provide refuge for abandoned and vulnerable children has evolved—through the dedication of the Ceenat Foundation and the generosity of its partners—into a thriving home where hope is restored daily.",
+      "For years, many of these children faced extreme hardship and uncertainty. Today, they are nurtured in an environment that promotes education, discipline, and emotional growth. With consistent support in the form of food supplies, learning materials, and mentorship, the orphanage continues to fulfill its mission of transforming young lives and shaping futures filled with promise.",
+      "The Royal Seed Orphanage embodies the Foundation's belief that every child deserves love, security, and the opportunity to dream beyond their circumstances."
+    ]
+  },
+  {
+    "id": 2,
+    "year": "2023",
+    "location": "RURAL GHANA",
+    "title": "THE CLASSROOM OF DREAMS",
+    "description": "In a small rural community, the lack of a proper learning facility posed a major challenge to children eager to pursue education.",
+    "image": "/img/volunteer/story-2.png",
+    "sections": [
+      "In a small rural community, the lack of a proper learning facility posed a major challenge to children eager to pursue education. A single wooden structure—dilapidated and poorly furnished—served as both a school and a place of worship. Recognizing the urgent need, the Ceenat Foundation intervened through its Classroom of Dreams project.",
+      "The Foundation constructed a modern classroom equipped with desks, stationery, and teaching materials, providing a safe and conducive environment for learning. The transformation has reignited hope among parents, teachers, and pupils alike, fostering a culture of knowledge and aspiration within the community.",
+      "This initiative not only enhances access to education but also underscores the Foundation's dedication to creating opportunities that enable future generations to thrive."
+    ]
+  },
+  {
+    "id": 3,
+    "year": "2023",
+    "location": "GHANA",
+    "title": "REAL PEOPLE. REAL IMPACT. REAL HOPE.",
+    "description": "Each story represents a testament to the Ceenat Foundation's mission of uplifting lives through compassion, innovation, and community-centered development.",
+    "image": "/img/volunteer/story-3.jpeg",
+    "sections": [
+      "Each story represents a testament to the Ceenat Foundation's mission of uplifting lives through compassion, innovation, and community-centered development. Together, they embody the spirit of hope that continues to drive the Foundation's work across Ghana and beyond."
+    ]
+  }
+]

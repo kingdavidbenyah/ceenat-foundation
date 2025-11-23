@@ -47,7 +47,10 @@ export default function volunteerCard({
     <div className="flex flex-col bg-white p-5 shadow shadow-sm md:p-[60px] relative rounded-[24px]  lg:w-full  ">
       {/* icon */}
       <div className="bg-white/10 md:self-center absolute shadow shadow-lg backdrop-blur-sm -translate-y-1/2 top-0 lg:self-start  rounded-full  w-fit h-fit p-2.5 md:p-[16px] ">
-        <div className="bg-primary-default shadow shadow-lg rounded-full p-2.5 md:p-[10px]">
+        <div
+          className="bg-primary-default shadow shadow-lg rounded-full p-2.5 md:p-[10px]"
+          style={{ boxShadow: " 0 14.4px 20px 0 #B8A9F1 " }}
+        >
           <Image
             src={iconSrc}
             width={1920}

@@ -7,7 +7,7 @@ const variants = {
   default:
     "py-2.5 lg:py-3.5 bg-primary-default text-gray-1 hover:bg-primary-hover focus:bg-primary-active",
   outline:
-    "py-2 lg:py-3 bg-gray-1 text-primary-default border border-solid border-primary-default hover:bg-green-1 focus:bg-green-1",
+    "py-2 lg:py-3 bg-gray-1 text-primary-default hover:text-gray-1 border border-solid border-primary-default hover:bg-primary-default focus:bg-primary-default",
 } as const;
 
 type Variant = keyof typeof variants;
@@ -28,7 +28,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const baseStyles =
-  "px-6 lg:px-8 text-bodyLarge lg:text-headingExtraSmall cursor-pointer rounded-lg flex-center gap-[10px] font-medium  disabled:opacity-50 disabled:cursor-not-allowed";
+  "px-6 lg:px-8 text-bodyLarge lg:text-headingExtraSmall cursor-pointer rounded-lg flex-center gap-[10px] font-medium  disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 ease-in-out";
 
 export default function Button({
   text,

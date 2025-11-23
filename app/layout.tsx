@@ -6,6 +6,8 @@ import Footer from "../components/footer";
 import { MenuProvider } from "../contexts/menu-context";
 import Overlay from "../components/ui/overlay";
 import FooterPics from "../components/footerPics";
+import ConditionalFooterPics from "../components/ConditionalFooterPics";
+
 
 
 
@@ -34,7 +36,7 @@ export default function RootLayout({
           {children}
           {/* Portal root */}
           <div id="portal-root" />
-          <FooterPics />
+          <ConditionalFooterPics />
           <Footer />
           <Overlay />
         </MenuProvider>
