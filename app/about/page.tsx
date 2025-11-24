@@ -172,7 +172,7 @@ export default function About() {
             <h3 className="text-gray-10 section-title lg:text-left font-bold">
               Our Mission
             </h3>
-            <p className="section-subtext">
+            <p className="section-subtext lg:text-left">
               To alleviate poverty and promote child welfare by providing food,
               education, healthcare, and empowerment to vulnerable families
               across Ghana.
@@ -185,7 +185,7 @@ export default function About() {
             <h3 className="text-gray-10 section-title lg:text-left font-bold">
               Our Vision
             </h3>
-            <p className="section-subtext">
+            <p className="section-subtext lg:text-left">
               A Ghana where every child is fed, nurtured, and empowered to reach
               their full potential.
             </p>
